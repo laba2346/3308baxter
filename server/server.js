@@ -23,6 +23,18 @@ models.sequelize.sync().then(function() {
   })
 })
 
+app.get('/assignments/', (req, res) => {
+  res.send('assignments not implemented')
+});
+
+app.get('/classes/', (req, res) => {
+  res.send('classes not implemented')
+});
+
+app.get('/users/', (req, res) => {
+  res.send('users not implemented')
+});
+
 // Create new store and send initial state to client
 app.get('/*', (req,res) => {
     res.send('hello world!');
